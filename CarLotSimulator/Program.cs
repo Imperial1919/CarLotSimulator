@@ -6,12 +6,44 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            //TODO
 
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property            
+            var FordTBird = new Car("Ford", "Thunderbird", 1955, "HONK", true, true);
+
+
+
+
+
+            Console.WriteLine($"This is a {FordTBird.Year} {FordTBird.Make} {FordTBird.Model} and I shall now demostrate some features, noteably the horn first.");
+
+            FordTBird.MakeHonkNoise();
+
+            Console.WriteLine($"NOW!, Let's see if she runs!");
+            FordTBird.MakeEngineNoise();
+
+
+
+            var CadillacSeville = new Car("Cadillac", "Seville", 1959, "HONK", true, true);
+
+
+
+
+
+            Console.WriteLine($"This is a {CadillacSeville.Year} {CadillacSeville.Make} {CadillacSeville.Model}. A Big girl indeed, 20 feet long if You can imagine it! As per routine, I shall now demostrate some features, noteably the horn first.");
+            CadillacSeville.MakeHonkNoise();
+            Console.WriteLine($"NOW!, Let's see if she runs!");
+            CadillacSeville.MakeEngineNoise();
+
+
+            var Packard = new Car("Packard", "Deluxe Phaeton", 1931, "HONK", true, true);
+
+
+
+
+
+            Console.WriteLine($"This is a {Packard.Year} {Packard.Make} {Packard.Model}. A Big girl indeed, 20 feet long if You can imagine it! As per routine, I shall now demostrate some features, noteably the horn first.");
+            Packard.MakeHonkNoise();
+            Console.WriteLine($"NOW!, Let's see if she runs!");
+            Packard.MakeEngineNoise();
 
 
             //Now that the Car class is created we can instanciate 3 new cars
